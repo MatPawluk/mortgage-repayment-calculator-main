@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Mortgage repayment calculator</title>
+
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <!-- ///////////////LEFT////////////////// -->
+
+      <div class="calculator">
+        <div class="calcluator__heading">
+          <h1>Mortgage Calculator</h1>
+          <button class="clear-all">
+            Clear All
+          </button>
+        </div>
+        <form>
+          <div class="form-box">
+            <label for="amount">Mortgage Amount</label>
+            <input type="number" id="amount">
+            <p class="error-text"></p>
+          </div>
+          <div class="double-form-box">
+            <div class="form-box">
+              <label for="term">Mortgage Term</label>
+              <input type="number" id="term">
+              <p class="error-text"></p>
+            </div>
+            <div class="form-box">
+              <label for="rate">Mortgage Term</label>
+              <input type="number" id="rate">
+              <p class="error-text"></p>
+            </div>
+          </div>
+
+          <label for="radio-box">Martage Type</label>
+          <div id="radio-box">
+            <div class="radio-box-input">
+              <input type="radio" id="repayment">
+              <label for="repayment">Repayment</label>
+            </div>
+            <div class="radio-box-input">
+              <input type="radio" id="interest">
+              <label for="interest">Interest Only</label>
+            </div>
+          </div>
+
+        </form>
+        <button class="calculate">
+          <img src="./assets/images/icon-calculator.svg" alt="" role="presentation">
+          Calculate Repayments
+        </button>
+      </div>
+
+      <!-- ///////////////RIGHT////////////////// -->
+      <div class="results results-empty">
+        <img src="./assets/images/illustration-empty.svg" alt="" role="presentation" class="results__img">
+        <h2>Results shown here</h2>
+        <p>Complete the form and click “calculate repayments” to see what
+          your monthly repayments would be.</p>
+      </div>
+
+      <div class="results hide">
+        <h2>
+          Your results
+        </h2>
+        <p>
+          Your results are shown below based on the information you provided.
+          To adjust the results, edit the form and click “calculate repayments” again.
+        </p>
+
+        <div class="result">
+          <div class="score">
+            <p class="score"></p>
+          </div>
+          <div class="total">
+            <p>Total you'll repay over the term</p>
+            <p class="total"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Mortgage Calculator
+  Clear All
+
+  Mortgage Amount
+
+  Mortgage Term
+
+  Interest Rate
+
+  Mortgage Type
+  Repayment
+  Interest Only
+
+  Calculate Repayments
+
+  <!-- Empty results start -->
+
+  <!-- Results shown here
+
+  Complete the form and click “calculate repayments” to see what 
+  your monthly repayments would be. -->
+
+  <!-- Empty results end -->
+
+  <!-- Completed results start -->
+
+  <!-- Your results
+
+  Your results are shown below based on the information you provided. 
+  To adjust the results, edit the form and click “calculate repayments” again.
+
+  Your monthly repayments
+
+  Total you'll repay over the term
+
+  Completed results end -->
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="github.com/MatPawluk">Mateusz Pawluk</a>.
+    </div>
+  </footer>
+
+</body>
+
+</html>
